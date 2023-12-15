@@ -1,10 +1,10 @@
 #!/bin/bash
 
 VALIDATE(){
-    if [ "$USER_NAME" = "admin" ] && [ "$PASSWORD" = "admin" ] && [ $? -ne 0 ]
+    if [ "$USER_NAME" = "admin" ] && [ "$PASSWORD" = "admin" ]
     then
         echo "Wellcome to Tech Tree $USER_NAME"
-        exit 1
+        
     else
         echo "Invalid credentials"
     fi
@@ -25,6 +25,7 @@ echo "Enter Password:"
 read -s PASSWORD
 
 VALIDATE $?
+END
 
 echo "*************Enter User Details*****************"
 echo "Enter Name Age Gender"
