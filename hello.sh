@@ -1,12 +1,15 @@
 #!/bin/bash
 
 echo "Enter Username:"
-read USER_NAME
-echo "Wellcome to Tech Tree $USER_NAME"
-PERSON1=$1
-PERSON2=$2
+read -s USER_NAME
+echo "Enter Password:"
+read -s PASSWORD
 
-echo "$PERSON1: Hello $PERSON2, Good Morning"
-echo "$PERSON2: Hi $PERSON1, very Good Morning"
-echo "$PERSON1: How are you $PERSON2?"
-echo "$PERSON2: I am good $PERSON1, How are you"
+VALIDATE(){
+    if[ $USER_NAME -e admin ]
+    then
+        echo "Wellcome to Tech Tree $USER_NAME"
+    else
+        echo "Invalid credentials"
+    fi
+}
