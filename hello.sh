@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VALIDATE(){
-    if [ "$USER_NAME" = "admin" ] && [ "$PASSWORD" = "admin" ] && [ $1 -ne 0]
+    if [ "$USER_NAME" = "admin" ] && [ "$PASSWORD" = "admin" ] && [ $1 -ne 0 ]
     then
         echo "Invalid credentials" 
         exit 1       
