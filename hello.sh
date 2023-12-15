@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VALIDATE(){
-    if [ "$USER_NAME" = "admin" ] && [ "$PASSWORD" = "admin" ] && [ $? -ne 0 ]
+    if [ "$USER_NAME" = "admin" ] && [ "$PASSWORD" = "admin" ] && [ $? = 0 ]
     then
         echo "Wellcome to Tech Tree $USER_NAME"
     else
@@ -11,11 +11,12 @@ VALIDATE(){
 }
 
 USER_VALIDATION(){
-    if [ "$AGE" -ge 19 ]
+    if [ "$AGE" -ge 19 ] 
     then
         echo "Hello!!! $NAME you are Eligible"
     else
         echo "Hello $NAME your are age is $AGE. So! you are not eligible"
+        exit 1
     fi
 }
 echo "Enter Username:"
