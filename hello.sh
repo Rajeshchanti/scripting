@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VALIDATE(){
-    if [ "$USER_NAME" = "admin" ] && [ "$PASSWORD" = "admin" ] && [ $1 == 0 ]
+    if [ "$USER_NAME" = "admin" ] && [ "$PASSWORD" = "admin" ]
     then
         echo "Wellcome to Tech Tree $USER_NAME"  
     else
