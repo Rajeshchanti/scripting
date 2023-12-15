@@ -9,6 +9,13 @@ VALIDATE(){
     fi
 }
 
+USER_VALIDATION(){
+    if ["$AGE" -ge 19 ]
+    then
+        echo "Hello!!! $NAME you are Eligible"
+    else
+        echo "Hello $NAME your are age is $AGE. So! you are not eligible"
+}
 echo "Enter Username:"
 read -s USER_NAME
 echo "Enter Password:"
@@ -17,6 +24,8 @@ read -s PASSWORD
 VALIDATE
 
 echo "*************Enter User Details*****************"
+echo "Enter Name Age Gender"
 read -r NAME AGE GENDER
 
 echo "Name:$NAME Age:$AGE Gender:$GENDER"
+USER_VALIDATION
