@@ -6,6 +6,7 @@ VALIDATE(){
         echo "Wellcome to Tech Tree $USER_NAME"
     else
         echo "Invalid credentials"
+        exit 1
     fi
 }
 
