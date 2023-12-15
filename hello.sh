@@ -10,7 +10,7 @@ VALIDATE(){
 }
 
 USER_VALIDATION(){
-    if ["$AGE" -ge 19 ]
+    if [ "$AGE" -ge 19 ]
     then
         echo "Hello!!! $NAME you are Eligible"
     else
