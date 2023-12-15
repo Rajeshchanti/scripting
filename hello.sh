@@ -4,9 +4,9 @@ VALIDATE(){
     if [ "$USER_NAME" = "admin" ] && [ "$PASSWORD" = "admin" ] && [ $? -ne 0 ]
     then
         echo "Wellcome to Tech Tree $USER_NAME"
+        exit 1
     else
         echo "Invalid credentials"
-        exit 1
     fi
 }
 
