@@ -15,6 +15,7 @@ USER_VALIDATION(){
         echo "Hello!!! $NAME you are Eligible"
     else
         echo "Hello $NAME your are age is $AGE. So! you are not eligible"
+    fi
 }
 echo "Enter Username:"
 read -s USER_NAME
