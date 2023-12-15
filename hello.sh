@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VALIDATE(){
-    if [ $USER_NAME -e 'admin' ]
+    if [ "$USER_NAME" = "admin" ];
     then
         echo "Wellcome to Tech Tree $USER_NAME"
     else
