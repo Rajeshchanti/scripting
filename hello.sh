@@ -6,7 +6,7 @@ VALIDATE(){
         echo "Wellcome to Tech Tree $USER_NAME"
     else
         echo "Invalid credentials"
-        exit 1
+        
     fi
 }
 
@@ -16,7 +16,7 @@ USER_VALIDATION(){
         echo "Hello!!! $NAME you are Eligible"
     else
         echo "Hello $NAME your are age is $AGE. So! you are not eligible"
-        exit 1
+        
     fi
 }
 echo "Enter Username:"
