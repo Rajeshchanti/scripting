@@ -14,7 +14,9 @@ read -s USER_NAME
 echo "Enter Password:"
 read -s PASSWORD
 
-echo "Enter User Details:"
-read -r Name AGE GENDER
-
 VALIDATE
+
+echo "*************Enter User Details*****************"
+read -r NAME AGE GENDER
+
+echo "Name:$NAME Age:$AGE Gender:$GENDER"
