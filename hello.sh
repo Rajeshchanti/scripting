@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Enter Username:"
+read USER_NAME
+echo "Wellcome to Tech Tree $USER_NAME"
 PERSON1=$1
 PERSON2=$2
 
