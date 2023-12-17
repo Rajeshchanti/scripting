@@ -21,3 +21,5 @@ VALIDATE(){
     fi
 
 yum install git -y
+
+VALIDATE
