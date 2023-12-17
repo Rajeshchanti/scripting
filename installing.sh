@@ -20,6 +20,6 @@ VALIDATE(){
         echo "You are a root"
     fi
 
-yum install git -y
+yum install mysql -y
 
-VALIDATE $? "git"
+VALIDATE $? "mysql"
