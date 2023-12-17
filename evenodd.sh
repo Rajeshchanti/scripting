@@ -2,8 +2,9 @@
 
 echo "Enter Num:"
 read NUM
+EXP=$(( $NUM % 2 ))
 
-    if [ $NUM % 2 == 0 ]
+    if [ $EXP -eq 0 ]
     then
         echo "$NUM is EVEN"
     else
