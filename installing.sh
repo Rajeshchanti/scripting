@@ -2,6 +2,9 @@
 
 ID=$(id -u)
 
+TIMESTAMP=$(date +%F-%H-%M-%S)
+LOG_FILE="/tmp/$0-$TIMESTAMP.log"
+
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
@@ -20,6 +23,6 @@ VALIDATE(){
         echo "You are a root"
     fi
 
-yum install mysql -y
+yum install mysql -y &>>LOG_FILE
 
 VALIDATE $? "mysql"
