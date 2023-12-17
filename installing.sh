@@ -3,12 +3,12 @@
 ID=$(id -u)
 
 VALIDATE(){
-    if [ $? -ne 0 ]
+    if [ $1 -ne 0 ]
     then
-        echo "installation is failed"
+        echo "$2.......installation is failed"
         exit 1
     else
-        echo "Installation is Success"
+        echo "$2.......Installation is Success"
     fi
 }
 
@@ -20,6 +20,6 @@ VALIDATE(){
         echo "You are a root"
     fi
 
-yum remove git -y
+yum install git -y
 
-VALIDATE
+VALIDATE $? "git"
