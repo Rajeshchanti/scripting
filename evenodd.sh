@@ -3,9 +3,9 @@
 echo "Enter Num:"
 read Num
 
-    if [ $NUM%2 == 0 ]
+    if [ '$NUM % 2' == 0 ]
     then
-        echo "Given Number is EVEN"
+        echo "$NUM is EVEN"
     else
-        echo "Not EVEN Number"
+        echo "$NUM Not EVEN Number"
     fi
