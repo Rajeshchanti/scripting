@@ -20,6 +20,6 @@ VALIDATE(){
         echo "You are a root"
     fi
 
-yum unstall git -y
+yum remove git -y
 
 VALIDATE
