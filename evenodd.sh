@@ -1,5 +1,5 @@
 #!/bin/bash
-
+DATE=$(date)
 echo "Enter Num:"
 read NUM
 EXP=$(( $NUM % 2 ))
