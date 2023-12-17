@@ -10,3 +10,4 @@ EXP=$(( $NUM % 2 ))
     else
         echo "$NUM Not EVEN Number"
     fi
+echo "$DATE"
