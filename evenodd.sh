@@ -3,7 +3,7 @@
 echo "Enter Num:"
 read NUM
 
-    if [ '$NUM % 2' == 0 ]
+    if [ $NUM % 2 == 0 ]
     then
         echo "$NUM is EVEN"
     else
