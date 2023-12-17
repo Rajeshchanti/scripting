@@ -24,7 +24,7 @@ read -s USER_NAME
 echo "Enter Password:"
 read -s PASSWORD
 
-VALIDATE $?
+VALIDATE
 
 echo "*************Enter User Details*****************"
 echo "Enter Name Age Gender"
