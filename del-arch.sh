@@ -10,7 +10,7 @@ DESTINATION=""
 DAYS="2"
 MEMORY=""
 
-FILE=$(find $SOURCE_DIR -type f -mtime +14 -name "")
+FILE=$(find $SOURCE_DIR -type f -mtime +14 -name "*")
 
 USAGE(){
     echo "USAGE:: $(basename $0) -s <source-dir> -a <archive|delete> -d <destination> -t <day> -m <memory-in-mb>"
