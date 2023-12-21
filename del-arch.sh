@@ -60,14 +60,14 @@ then
 fi
 if [ "$ACTION" == "delete" ]
 then
-    while IFS=read line
+    while IFS= read -r line
     do
         echo "Deleting file:$line"
         rm -rf $line
     done <<< FILE
 elif [ "$ACTION" == "archive" ] && [ -z "$DESTINATION" ]
 then
-    while IFS=read -r line
+    while IFS= read -r line
     do
         echo "archive file:$line"
         zip -r  "$DESTINATION/$(basename "$line").zip"
