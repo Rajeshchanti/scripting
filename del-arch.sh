@@ -71,6 +71,6 @@ then
     do
         echo "archive file:$line"
         zip -r  "$DESTINATION/$(basename "$line").zip"
-    done <<< FILE
+    done <<< $FILE
 fi
 
