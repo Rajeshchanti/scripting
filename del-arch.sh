@@ -60,7 +60,7 @@ then
 fi
 if [ "$ACTION" == "delete" ]
 then
-    while IFS=read -r line
+    while IFS=read line
     do
         echo "Deleting file:$line"
         rm -rf $line
