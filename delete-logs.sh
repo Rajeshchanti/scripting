@@ -3,7 +3,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-SOURCE_DIR="/tmp/script/logs.log"
+SOURCE_DIR="/tmp/scripts/logs.log"
 if [ ! -d $SOURCE_DIR ]
 then
     echo -e "$R No such $SOURCE_DIR directory found $N"
