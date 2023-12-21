@@ -64,7 +64,7 @@ then
     do
         echo "Deleting file:$line"
         rm -rf $line
-    done <<< FILE
+    done <<< $FILE
 elif [ "$ACTION" == "archive" ] && [ -z "$DESTINATION" ]
 then
     while IFS= read -r line
